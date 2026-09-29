@@ -49,7 +49,7 @@ menuToggle.addEventListener('click', () => {
 });
 mobileNav.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 document.addEventListener('keydown', event => { if (event.key === 'Escape') closeMenu(); });
-window.matchMedia('(min-width: 821px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
+window.matchMedia('(min-width: 961px)').addEventListener('change', event => { if (event.matches) closeMenu(); });
 
 const contactDialog = document.getElementById('contact-dialog');
 const privacyDialog = document.getElementById('privacy-dialog');
