@@ -35,7 +35,7 @@ Do not deploy over an unrelated website. If `public_html` contains a previous si
 
 ## Faster manual upload option
 
-Extract the ZIP's website files into the `public_html` folder for semisocket.com using Hostinger File Manager. `index.html` must be directly in `public_html`, and the `assets` directory must be alongside it. Keep `.htaccess` included.
+In GitHub, choose **Code → Download ZIP**. Extract it, then upload the contents of the `semisocket-main` folder into `public_html` for semisocket.com using Hostinger File Manager. `index.html` must be directly in `public_html`, and the `assets` directory must be alongside it. Keep `.htaccess` included.
 
 ## Contact setup before the public launch
 
@@ -66,5 +66,3 @@ Station imagery is an architectural concept, not a photograph of an operating lo
 - `app.js`: station tabs, navigation, dialogs, and email composer.
 - `assets/charging-plaza.webp`: compressed original station concept image.
 - `assets/manrope-latin.woff2`: self-hosted Manrope variable font.
-
-The separate `SemiSocket-preview.html` is a single-file offline preview. It embeds the image, styles, font, and scripts for convenient viewing. Use the ZIP's normal separate-file version for hosting.
