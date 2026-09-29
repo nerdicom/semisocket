@@ -12,7 +12,7 @@ Configure and verify `hello@semisocket.com` before launching. The inquiry compos
 
 ## Project status
 
-The website presents the network as in development. The station image is an original architectural concept. No manufacturer affiliation, live stations, specific hardware performance, or opening dates are represented as confirmed.
+The website presents the network as in development. The station image is an original architectural concept. No manufacturer affiliation, live stations, specific hardware performance, or opening dates are represented as confirmed. Investor hardware specifications, budgets and financial scenarios are explicitly proposed or illustrative.
 
 See `LAUNCH-GUIDE.md` for deployment and editing instructions.
 
@@ -29,3 +29,9 @@ Manrope font by Mikhail Sharanda and Mirko Velimirovic, distributed under the SI
 The station and charger images were generated specifically for SemiSocket using OpenAI image generation.
 
 Map geometry: US Atlas 3.0.1, derived from U.S. Census cartographic boundaries, projected with D3 Albers USA. Source details and ISC licenses are in `assets/MAP-ATTRIBUTION.txt`. City coordinate source: https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html. Interstate reference: https://ops.fhwa.dot.gov/freight/infrastructure/nfn/maps/nhfn_map.htm.
+
+## Investor section
+
+The homepage investor section (`#investors`) summarizes the September 2026 concept-stage business plan: a fleet-backed six-bay pilot, initial screening markets, proposed development and construction budgets, staged rollout, and illustrative site economics. `investors.css` owns its layout and the expanded navigation breakpoint. The native disclosures work without JavaScript. Investor inquiry buttons use the existing email composer with the Investor / strategic partner interest selected.
+
+Web-optimized copies of the 10-slide PDF and PowerPoint are hosted as `assets/SemiSocket-Investor-Business-Plan.pdf` and `.pptx`. Only embedded images were compressed; all PDF page text and PowerPoint slide XML and notes match the supplied originals. Downloads and the online PDF link point to these files. Update both source files, the displayed month/sizes, and on-page figures together when the concept changes. The $1.5M development proposal and separate $4.5M pilot budget are not represented as committed funding or sufficient for the full rollout.
