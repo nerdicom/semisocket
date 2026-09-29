@@ -13,9 +13,9 @@
   <meta property="og:url" content="https://semisocket.com/">
   <meta name="twitter:card" content="summary">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%23cafa55'/%3E%3Cpath d='M29 10H17a7 7 0 0 0 0 14h6M11 30h12a7 7 0 0 0 0-14h-6' fill='none' stroke='%23111613' stroke-width='5'/%3E%3C/svg%3E">
-  <link rel="preload" as="image" href="assets/charging-plaza.webp" fetchpriority="high">
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+  <link rel="preload" as="image" href="assets/charger-station.webp" imagesrcset="assets/charger-station-800.webp 800w, assets/charger-station.webp 1672w" imagesizes="(max-aspect-ratio: 1672/941) 1600px, 100vw" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css?v=charger-1">
+  <script src="app.js?v=charger-1" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -27,7 +27,7 @@
   </header>
   <main id="main">
     <section class="hero" id="top" aria-labelledby="hero-heading">
-      <img class="hero-image" src="assets/charging-plaza.webp" width="1672" height="941" alt="Architectural concept of a SemiSocket charging plaza, with electric semi trucks under a lime-lit canopy at dusk." fetchpriority="high">
+      <img class="hero-image" src="assets/charger-station.webp" srcset="assets/charger-station-800.webp 800w, assets/charger-station.webp 1672w" sizes="(max-aspect-ratio: 1672/941) 1600px, 100vw" width="1672" height="941" alt="SemiSocket station concept with white, lime-branded chargers and an electric semi beneath a canopy at dusk." fetchpriority="high">
       <div class="hero-shade"></div>
       <div class="hero-content wrap">
         <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span> ELECTRIC FREIGHT. REIMAGINED.</p>
@@ -48,9 +48,27 @@
 
     <section class="experience section-pad" id="experience" aria-labelledby="experience-heading">
       <div class="wrap"><div class="section-intro"><p class="eyebrow">02 / THE EXPERIENCE</p><span class="section-side-note">THOUGHT THROUGH. FROM ARRIVAL TO DEPARTURE.</span></div><div class="section-heading-row"><h2 id="experience-heading">A better break.<br>A stronger next mile.</h2><p>Every part of the station should make the next part of the journey easier.</p></div>
-        <div class="station-frame"><img src="assets/charging-plaza.webp" width="1672" height="941" loading="lazy" alt="Proposed pull-through charging bays beside a glass-fronted driver lounge."><span class="concept-tag">THE SEMISOCKET STATION CONCEPT</span><div class="station-caption"><span id="scene-label">Space to arrive. Space to leave.</span><span>CONCEPT RENDERING</span></div></div>
+        <div class="station-frame"><img id="experience-image" src="assets/charger-station.webp" srcset="assets/charger-station-800.webp 800w, assets/charger-station.webp 1672w" sizes="(max-width: 560px) calc(100vw - 40px), (max-width: 1100px) calc(100vw - 64px), (max-width: 1440px) calc(100vw - 112px), 1328px" width="1672" height="941" loading="lazy" decoding="async" alt="White SemiSocket chargers arranged along spacious pull-through lanes beside a driver lounge."><span class="concept-tag">THE SEMISOCKET STATION CONCEPT</span><div class="station-caption"><span id="scene-label">Space to arrive. Space to leave.</span><span>CONCEPT RENDERING</span></div></div>
         <div class="experience-controls" role="tablist" aria-label="Explore the station"><button role="tab" id="experience-tab-0" aria-selected="true" aria-controls="experience-panel" tabindex="0" data-experience="0"><span>01</span> Pull through</button><button role="tab" id="experience-tab-1" aria-selected="false" aria-controls="experience-panel" tabindex="-1" data-experience="1"><span>02</span> Plug in</button><button role="tab" id="experience-tab-2" aria-selected="false" aria-controls="experience-panel" tabindex="-1" data-experience="2"><span>03</span> Take a moment</button></div>
         <div class="experience-detail" id="experience-panel" role="tabpanel" aria-labelledby="experience-tab-0" tabindex="0"><h3 id="experience-title">Designed for the entire truck.</h3><p id="experience-copy">Wide approaches and pull-through charging lanes are central to the concept. The goal is a simple stop that works with a full tractor-trailer, without planning around a passenger-car parking space.</p></div>
+      </div>
+    </section>
+
+    <section class="chargers section-pad" id="chargers" aria-labelledby="chargers-heading">
+      <div class="wrap">
+        <div class="section-intro"><p class="eyebrow">A CLOSER LOOK / THE SEMISOCKET CHARGER</p><span class="charger-concept-label">DESIGN CONCEPT</span></div>
+        <div class="section-heading-row"><h2 id="chargers-heading">Meet your<br><span class="muted-heading">next connection.</span></h2><p>A recognizable place to plug in. A clear view of your charge. A straightforward way to pay.</p></div>
+        <div class="charger-grid">
+          <figure class="charger-feature">
+            <div class="charger-image"><img src="assets/charger-hero.webp" srcset="assets/charger-hero-800.webp 800w, assets/charger-hero.webp 1536w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1100px) 50vw, 720px" width="1536" height="1024" loading="lazy" decoding="async" alt="Concept of a white SemiSocket charger with a lime S, digital charging readout, payment terminal, and cable holster."></div>
+            <figcaption><span class="charger-feature-label">01 / DESIGNED TO STAND OUT</span><h3>Big presence.<br>Clear information.</h3><p>White housing. Our signature lime S. An easy-to-read display puts charging progress and session information at the center of the concept.</p></figcaption>
+          </figure>
+          <figure class="charger-feature">
+            <div class="charger-image"><img src="assets/charger-payment.webp" srcset="assets/charger-payment-800.webp 800w, assets/charger-payment.webp 1448w" sizes="(max-width: 700px) calc(100vw - 40px), (max-width: 1100px) 50vw, 610px" width="1448" height="1086" loading="lazy" decoding="async" alt="Close-up concept of a driver tapping a phone at the SemiSocket charger, beside a card insertion slot and digital screen."></div>
+            <figcaption><span class="charger-feature-label">02 / PAY RIGHT AT THE CHARGER</span><h3>Your next charge.<br>A simple connection.</h3><p>The payment concept brings contactless tap and card insertion to the charger, with clear on-screen prompts to guide the start of a session.</p></figcaption>
+          </figure>
+        </div>
+        <p class="charger-design-note">Proposed charger design. Displays, payment options, and hardware are illustrative; final specifications will be confirmed as development progresses.</p>
       </div>
     </section>
 

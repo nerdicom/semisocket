@@ -1,9 +1,9 @@
 'use strict';
 const siteConfig = Object.freeze({ contactEmail: 'hello@semisocket.com' });
 const experienceContent = [
-  { title: 'Designed for the entire truck.', copy: 'Wide approaches and pull-through charging lanes are central to the concept. The goal is a simple stop that works with a full tractor-trailer, without planning around a passenger-car parking space.', caption: 'Space to arrive. Space to leave.' },
-  { title: 'Big trucks call for big thinking.', copy: 'We’re planning around the power demands of heavy-duty electric fleets. Equipment, connectors, and electrical capacity will be evaluated together, so each location can be designed around the vehicles it intends to serve.', caption: 'A charging vision built around heavy-duty fleets.' },
-  { title: 'A proper break is part of the plan.', copy: 'A bright, welcoming lounge, comfortable seating, and access to everyday essentials are part of our station vision. Because drivers deserve a thoughtful place to reset while their trucks recharge.', caption: 'Recharge the truck. Reset for the road.' }
+  { title: 'Designed for the entire truck.', copy: 'Wide approaches and pull-through charging lanes are central to the concept. The goal is a simple stop that works with a full tractor-trailer, without planning around a passenger-car parking space.', caption: 'Space to arrive. Space to leave.', image: 'charger-station', width: 1672, height: 941, position: 'center', alt: 'White SemiSocket chargers arranged along spacious pull-through lanes beside a driver lounge.' },
+  { title: 'A clear connection, from the start.', copy: 'Our charger concept pairs a white housing and lime S with a clear digital readout, cable management, and payment at the charger. Equipment, connectors, and electrical capacity will be evaluated around the vehicles each location intends to serve.', caption: 'Meet the SemiSocket charger.', image: 'charger-hero', width: 1536, height: 1024, position: '68% center', alt: 'White SemiSocket charger concept with a lime S, charging progress screen, contactless and card payment, and side-mounted cable.' },
+  { title: 'A proper break is part of the plan.', copy: 'A bright, welcoming lounge, comfortable seating, and access to everyday essentials are part of our station vision. Because drivers deserve a thoughtful place to reset while their trucks recharge.', caption: 'Recharge the truck. Reset for the road.', image: 'charging-plaza', width: 1672, height: 941, position: '75% center', alt: 'Architectural concept of the warm, glass-fronted driver lounge beside the SemiSocket charging bays.' }
 ];
 const tabs = [...document.querySelectorAll('[data-experience]')];
 function selectExperience(index, focus = false) {
@@ -16,6 +16,14 @@ function selectExperience(index, focus = false) {
   document.getElementById('experience-title').textContent = next.title;
   document.getElementById('experience-copy').textContent = next.copy;
   document.getElementById('scene-label').textContent = next.caption;
+  const scene = document.getElementById('experience-image');
+  scene.srcset = next.image === 'charging-plaza' ? '' : `assets/${next.image}-800.webp 800w, assets/${next.image}.webp ${next.width}w`;
+  scene.src = `assets/${next.image}.webp`;
+  scene.alt = next.alt;
+  scene.width = next.width;
+  scene.height = next.height;
+  scene.style.objectFit = next.image === 'charger-hero' ? 'contain' : 'cover';
+  scene.style.objectPosition = next.position;
   document.getElementById('experience-panel').setAttribute('aria-labelledby', tabs[index].id);
   if (focus) tabs[index].focus();
 }
